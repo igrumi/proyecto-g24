@@ -665,7 +665,7 @@ ul.btn li:last-child {
 .laptop {
      font-family: 'Dosis', sans-serif;
      padding: 130px 0;
-     background-color: #4f4aa6;
+     background-color: #4aa652;
 }
 
 .laptop .titlepage {
@@ -768,7 +768,7 @@ ul.btn li:last-child {
 }
 
 .customer_Carousel .carousel-indicators li.active {
-     background: #4f4aa6;
+     background: #5dbb4b;
 }
 
 #myCarousel .carousel-control-next-icon,
@@ -1005,7 +1005,7 @@ ul.social_icon li a:hover {
 
 .inner_posituong .header {
      position: inherit;
-     background: #4843a3;
+     background: #5dbb4b;
 }
 
 .computer_page .laptop {
