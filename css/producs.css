@@ -76,8 +76,9 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   }
   
   .shopping-cart {
-    margin-top: 150px;
+    margin-top: auto;
     background: #ffffff8c;
+    border: dashed black;
   }
   
   /* Column headers */
