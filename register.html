@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -30,7 +32,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout inner_posituong">
+   <body class="main-layout inner_posituong computer_page">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -61,10 +63,10 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="index.html">Inicio</a>
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="product.html">Productos</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="about.html">Suscripción</a></li>
                               </li>
                               <li class="nav-item d_none">
@@ -83,84 +85,115 @@
       </header>
       <!-- end header inner -->
       <!-- end header -->
-      <!-- products -->
-      <div  class="products">
+      <!-- about section -->
+      <div class="contact">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Our Products</h2>
+                     <h2>Suscribirse</h2>
                   </div>
                </div>
             </div>
             <div class="row">
-               <div class="col-md-12">
-                  <div class="our_products">
+               <div class="col-md-10 offset-md-1">
+                  <form id="request" class="main_form">
                      <div class="row">
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product1.png" alt="#"/></figure>
-                              <h3>Computer</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product2.png" alt="#"/></figure>
-                              <h3>Laptop</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product3.png" alt="#"/></figure>
-                              <h3>Tablet</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product4.png" alt="#"/></figure>
-                              <h3>Speakers</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product5.png" alt="#"/></figure>
-                              <h3>internet</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product6.png" alt="#"/></figure>
-                              <h3>Hardisk</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="product_box">
-                              <figure><img src="images/product7.png" alt="#"/></figure>
-                              <h3>Rams</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="product_box">
-                              <figure><img src="images/product8.png" alt="#"/></figure>
-                              <h3>Bettery</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="product_box">
-                              <figure><img src="images/product9.png" alt="#"/></figure>
-                              <h3>Drive</h3>
-                           </div>
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Nombre" type="type" name="nombre" required> 
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Apellido" type="type" name="apellido" required> 
                         </div>
                         <div class="col-md-12">
-                           <a class="read_more" href="#">See More</a>
+                           <input class="contactus" placeholder="Correo" type="type" name="Email" required> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Número de celular" type="type" name="phoneNumber" >                          
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Edad" type="number" name="edad" >
+                        <div style="color: white; font-size:large" class="col-md-12">
+                           <label for="hombre">Hombre</label>
+                           <input type="radio" name="sexo" id="hombre" required class="radio_sexo">
+                           <label for="mujer">Mujer</label>
+                           <input type="radio" name="sexo" id="mujer" required class="radio_sexo">
+                           <label for="nodecirlo">Prefiero no decirlo</label>
+                           <input type="radio" name="sexo" id="nodecirlo" required class="radio_sexo">
+                        </div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: white;font-size:large" for="prov" class="left_label">Comuna</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                              <select id="prov">
+                                 <option value="">Seleccione comuna</option>
+                                    <optgroup label="Provincia de Santiago">
+                                       <option value="0">Cerrillos</option>
+                                       <option value="1">Cerro Navia</option>
+                                       <option value="2">Conchalí</option>
+                                       <option value="3">El Bosque</option>
+                                       <option value="4">Estación Central</option>
+                                       <option value="5">Huechuraba</option>
+                                       <option value="6">Independencia</option>
+                                       <option value="7">La Cisterna</option>
+                                       <option value="8">La Florida</option>
+                                       <option value="9">La Granja</option>
+                                       <option value="10">La Pintana</option>
+                                       <option value="11">La Reina</option>
+                                       <option value="12">Las Condes</option>
+                                       <option value="13">Lo Barnechea</option>
+                                       <option value="14">Lo Espejo</option>
+                                       <option value="15">Lo Prado</option>
+                                       <option value="16">Macul</option>
+                                       <option value="17">Maipú</option>
+                                       <option value="18">Ñuñoa</option>
+                                       <option value="19">Pedro Aguirre Cerda</option>
+                                       <option value="20">Peñalolén</option>
+                                       <option value="21">Providencia</option>
+                                       <option value="22">Pudahuel</option>
+                                       <option value="23">Quilicura</option>
+                                       <option value="24">Quinta Normal</option>
+                                       <option value="25">Recoleta</option>
+                                       <option value="26">Renca</option>
+                                       <option value="27">San Joaquín</option>
+                                       <option value="28">San Miguel</option>
+                                       <option value="29">San Ramón</option>
+                                       <option value="30">Santiago </option>
+                                       <option value="31">Vitacura</option>
+                                    </optgroup>
+                                    <optgroup label="Provincia de Cordillera">
+                                       <option value="32">Puente Alto</option>
+                                       <option value="33">San José de Maipo</option>
+                                       <option value="34">Pirque</option>
+                                    </optgroup>
+                                 <option style="font-weight: bolder;" label=" Provincia de Talagante" value="35">Provincia de Talagante</option>
+                                 <optgroup label="Provincia de Maipo">
+                                    <option value="36">San Bernardo</option>
+                                    <option value="37">Calera de Tango</option>
+                                    <option value="38">Buin</option>
+                                    <option value="39">Paine</option>
+                              </optgroup>
+                              <optgroup label="Provincia de Chacabuco">
+                                 <option value="40">Colina</option>
+                                 <option value="41">Lampa</option>
+                                 <option value="42">Til-Til</option>
+                           </optgroup>
+                           <optgroup label="Provincia de Melipilla">
+                              <option value="43">Alhué</option>
+                              <option value="44">Curacaví </option>
+                              <option value="45">María Pinto</option>
+                              <option value="46">Melipilla</option>
+                              <option value="47">San Pedro</option>
+                        </optgroup>
+                        </select>
+                        <div class="col-md-12">
+                           <button class="send_btn">Enviar</button>
                         </div>
                      </div>
-                  </div>
+                  </form>
                </div>
             </div>
          </div>
       </div>
-      <!-- end products -->
+   </div>
+</div>
+      <!-- end about section -->
       <!--  footer -->
       <footer>
          <div class="footer">

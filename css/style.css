@@ -788,6 +788,12 @@ ul.btn li:last-child {
      background-size: 100% 100%;
      padding: 90px 0;
 }
+.contact2 {
+     background: url(../images/contact2.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     padding: 90px 0;
+}
 
 .contact .titlepage h2 {
      color: #fff;
