@@ -63,7 +63,6 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   
   /* Body/Header stuff */
   body {
-    padding: 0px 30px 30px 20px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
   }
