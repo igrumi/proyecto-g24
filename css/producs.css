@@ -31,7 +31,7 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
   }
   
   .product-line-price {
-    float: left;
+    float: right;
     width: 12%;
     text-align: right;
   }
