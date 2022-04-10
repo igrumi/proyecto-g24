@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -8,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>cla</title>
+      <title>PetCare</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -20,6 +22,10 @@
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      
+      <!-- Carro -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -30,7 +36,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
    <!-- body -->
-   <body class="main-layout inner_posituong">
+   <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -46,7 +52,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <h1 style="color: white;">PetCare CL</h1>
                            </div>
                         </div>
                      </div>
@@ -58,29 +64,26 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item ">
-                                 <a class="nav-link" href="index.html">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="computer.html">Computer</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="laptop.html">Laptop</a>
-                              </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="product.html">Products</a>
+                                 <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
+                                 <a class="nav-link" href="about.html">Sobre nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="gatos.html">Gatos</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="perros.html">Perros</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="product.html">Productos</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contact.html">Contacto</a>
                               </li>
                               <li class="nav-item d_none">
-                                 <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Login</a>
+                                 <a class="nav-link" href="#">Iniciar sesión</a>
                               </li>
                            </ul>
                         </div>
@@ -92,84 +95,102 @@
       </header>
       <!-- end header inner -->
       <!-- end header -->
-      <!-- products -->
-      <div  class="products">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Our Products</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="our_products">
-                     <div class="row">
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product1.png" alt="#"/></figure>
-                              <h3>Computer</h3>
+      <!-- banner -->
+      <!-- carro -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row">
+                           <div class="col-md-6">
                            </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product2.png" alt="#"/></figure>
-                              <h3>Laptop</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product3.png" alt="#"/></figure>
-                              <h3>Tablet</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product4.png" alt="#"/></figure>
-                              <h3>Speakers</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product5.png" alt="#"/></figure>
-                              <h3>internet</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4 margin_bottom1">
-                           <div class="product_box">
-                              <figure><img src="images/product6.png" alt="#"/></figure>
-                              <h3>Hardisk</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="product_box">
-                              <figure><img src="images/product7.png" alt="#"/></figure>
-                              <h3>Rams</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="product_box">
-                              <figure><img src="images/product8.png" alt="#"/></figure>
-                              <h3>Bettery</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="product_box">
-                              <figure><img src="images/product9.png" alt="#"/></figure>
-                              <h3>Drive</h3>
-                           </div>
-                        </div>
-                        <div class="col-md-12">
-                           <a class="read_more" href="#">See More</a>
+                           <body>
+                            <section class="section">
+                                <br>
+                                <br>
+                                <br>
+                                <div class="products">
+                                    <!--
+                                        https://www.iconfinder.com/iconsets/beverage
+                                        Creative Commons (Attribution 3.0 Unported)
+                                        https://creativemarket.com/eucalyp
+                                    -->
+                                    <div class="product">
+                                        <img class="product__image" src="images/huesos.jpg" alt="Hueso">
+                                        <br>
+                                        <h2 class="product__name">Huesito para Perro</h2>
+                                        <h3 class="product__price">6.00</h3>
+                                        <button class="btn btn--primary" data-action="ADD_TO_CART">Agregar</button>
+                                    </div>
+                                    <div class="product">
+                                        <img class="product__image" src="images/purina.jpg" alt="Purina">
+                                        <h2 class="product__name">Purina</h2>
+                                        <h3 class="product__price">7.00</h3>
+                                        <button class="btn btn--primary" data-action="ADD_TO_CART">Agregar</button>
+                                    </div>
+                                    <div class="product">
+                                        <img class="product__image" src="img/products/juice.svg" alt="Juice">
+                                        <h2 class="product__name">Juice</h2>
+                                        <h3 class="product__price">4.00</h3>
+                                        <button class="btn btn--primary" data-action="ADD_TO_CART">Agregar</button>
+                                    </div>
+                                    <div class="product">
+                                        <img class="product__image" src="img/products/milk.svg" alt="Milk">
+                                        <h2 class="product__name">Milk</h2>
+                                        <h3 class="product__price">2.50</h3>
+                                        <button class="btn btn--primary" data-action="ADD_TO_CART">Agregar</button>
+                                    </div>
+                                    <div class="product">
+                                        <img class="product__image" src="img/products/mineral-water.svg" alt="Mineral Water">
+                                        <h2 class="product__name">Mineral Water</h2>
+                                        <h3 class="product__price">1.00</h3>
+                                        <button class="btn btn--primary" data-action="ADD_TO_CART">Agregar</button>
+                                    </div>
+                                    <div class="product">
+                                        <img class="product__image" src="img/products/smoothie.svg" alt="Smoothie">
+                                        <h2 class="product__name">Smoothie</h2>
+                                        <h3 class="product__price">6.00</h3>
+                                        <button class="btn btn--primary" data-action="ADD_TO_CART">Agregar</button>
+                                    </div>
+                                </div>
+                            </section>
+                    
+                            <section class="section">
+                                <br>
+                                <br>
+                                <br>                                
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="cart"></div>
+                            </section>
+                    
+                        </main>
+                    
+                        <script src="/js/script.js"></script>
+                    </body>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
          </div>
-      </div>
+      <!-- end Carro -->
+      </section>
+      <!-- end banner -->
+      <!-- three_box -->
+      <!-- three_box -->
+      <!-- products -->
       <!-- end products -->
+      <!-- laptop  section -->
+      <!-- end laptop  section -->
+      <!-- customer -->
+        
+      <!-- end customer -->
+      <!--  contact -->
+      <!-- end contact -->
       <!--  footer -->
       <footer>
          <div class="footer">
