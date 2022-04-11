@@ -2,169 +2,442 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Vue.js 2 CRUD application</title>
+  <title>Admin</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css'><link rel="stylesheet" href="./css/productsad.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<html lang="en">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css'>
+  <link rel="stylesheet" href="css/productosad.css">
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
 <head>
+  <!-- basic -->
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Vue.js CRUD application</title>
-  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>PetCare</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- fevicon -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <!-- Scrollbar Custom CSS -->
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <!-- Tweaks for older IEs-->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
+  <!-- Page Wrapper -->
+  <div id="wrapper">
 
-<div class="container">
-  <header class="page-header">
-    <div class="branding">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>  
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin.html">
+            <div class="sidebar-brand-icon rotate-n-15">
+                <i class="fas fa-laugh-wink"></i>
+            </div>
+            <div class="sidebar-brand-text mx-3">Admin</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+            <a class="nav-link" href="admin.html">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Inicio</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Componentes</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Opciones:</h6>
+                    <a class="collapse-item" href="productad.html">Productos</a>
+                    <a class="collapse-item" href="facturas.html">Ventas
+
+                    </a>
+                </div>
+            </div>
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Opciones
+        </div>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                aria-expanded="true" aria-controls="collapsePages">
+                <i class="fas fa-fw fa-folder"></i>
+                <span>Carpetas</span>
+            </a>
+            <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">Ventas totales:</h6>
+                    <a class="collapse-item" href="inventario.html">Inventario</a>
+                    <a class="collapse-item" href="registros.html">Registros</a>
+                    <a class="collapse-item" href="productos.html">Productos</a>
+                    <div class="collapse-divider"></div>
+                </div>
+            </div>
+        </li>
+
+
+
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+            <a class="nav-link" href="tablas.html">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Tablas</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+
+
+        <!-- Sidebar Message -->
+        <div class="sidebar-card d-none d-lg-flex">
+            
+
+        </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <!-- Topbar Search -->
+                <form
+                    class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
+                            aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Topbar Navbar -->
+                <ul class="navbar-nav ml-auto">
+
+                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                    <li class="nav-item dropdown no-arrow d-sm-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                            aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto w-100 navbar-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small"
+                                        placeholder="Search for..." aria-label="Search"
+                                        aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - Alerts -->
+                        <!-- Dropdown - Alerts -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">
+                                Alerts Center
+                            </h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-primary">
+                                        <i class="fas fa-file-alt text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 12, 2019</div>
+                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-success">
+                                        <i class="fas fa-donate text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 7, 2019</div>
+                                    $290.29 has been deposited into your account!
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-warning">
+                                        <i class="fas fa-exclamation-triangle text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 2, 2019</div>
+                                    Spending Alert: We've noticed unusually high spending for your account.
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - Messages -->
+
+
+                    <div class="topbar-divider d-none d-sm-block"></div>
+
+                    <!-- Nav Item - User Information -->
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Pepe Grillo</span>
+                            <img class="img-profile rounded-circle"
+                                src="img/undraw_profile.svg">
+                        </a>
+                        <!-- Dropdown - User Information -->
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                            aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Perfil
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Ajustes
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Administrar
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Salir
+                            </a>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </nav>
+            <div class="container">
+              <header class="page-header">
+                <div class="branding">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>  
+                </div>
+              </header>
+              <main id="app">
+                <router-view></router-view>
+              </main>
+            </div>
+            
+            <template id="product-list">
+              <div>
+                <div class="actions">
+                  <router-link class="btn btn-default" v-bind:to="{path: '/add-product'}">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    Agregar Producto
+                  </router-link>
+                </div>
+                <div class="filters row">
+                  <div class="form-group col-sm-3">
+                    <label for="search-element">Nombre Del Producto</label>
+                    <input v-model="searchKey" class="form-control" id="search-element" requred/>
+                  </div>
+                </div>
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th class="col-sm-2">Acciones</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr v-for="product in filteredProducts">
+                    <td>
+                      <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.name }}</router-link>
+                    </td>
+                    <td>{{ product.description }}</td>
+                    <td>
+                      {{ product.price }}
+                      <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                    </td>
+                    <td>
+                        {{ product.stock }}
+                        <span class="number" aria-hidden="true"></span>
+                      </td>
+                    <td>
+                      <router-link class="btn btn-warning btn-xs" v-bind:to="{name: 'product-edit', params: {product_id: product.id}}">Editar</router-link>
+                      <router-link class="btn btn-danger btn-xs" v-bind:to="{name: 'product-delete', params: {product_id: product.id}}">Borrar</router-link>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </template>
+            
+            <template id="add-product">
+              <div>
+                <h2>Agregar Nuevo Producto</h2>
+                <form v-on:submit="createProduct">
+                  <div class="form-group">
+                    <label for="add-name">Nombre</label>
+                    <input class="form-control" id="add-name" v-model="product.name" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="add-description">Descripcion</label>
+                    <textarea class="form-control" id="add-description" rows="10" v-model="product.description"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="add-price">Precio, <span class="glyphicon glyphicon-euro"></span></label>
+                    <input type="number" class="form-control" id="add-price" v-model="product.price"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="add-stock">Stock, <span class=""></span></label>
+                    <input type="number" class="form-control" id="add-stock" v-model="product.stock"/>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Crear</button>
+                  <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
+                </form>
+              </div>
+            </template>
+            
+            <template id="product">
+              <div>
+                <h2>{{ product.name }}</h2>
+                <b>Descripcion: </b>
+                <div>{{ product.description }}</div>
+                <b>Precio:</b>
+                <div>{{ product.price }}<span class="glyphicon glyphicon-euro"></span></div>
+                <b>Stock:</b>
+                <div>{{ product.stock }}<span class=""></span></div>
+                <br/>
+                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+                <router-link v-bind:to="'/'">Volver a la lista de productos</router-link>
+              </div>
+            </template>
+            
+            <template id="product-edit">
+              <div>
+                <h2>Editar Producto</h2>
+                <form v-on:submit="updateProduct">
+                  <div class="form-group">
+                    <label for="edit-name">Nombre</label>
+                    <input class="form-control" id="edit-name" v-model="product.name" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-description">Descripcion</label>
+                    <textarea class="form-control" id="edit-description" rows="3" v-model="product.description"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-price">Precio, <span class="glyphicon glyphicon-euro"></span></label>
+                    <input type="number" class="form-control" id="edit-price" v-model="product.price"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-stock">Stock <span class=""></span></label>
+                    <input type="number" class="form-control" id="edit-stock" v-model="product.stock"/>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
+                </form>
+              </div>
+            </template>
+            
+            <template id="product-delete">
+              <div>
+                <h2>Delete product {{ product.name }}</h2>
+                <form v-on:submit="deleteProduct">
+                  <p>Esta accion no se puede realizar.</p>
+                  <button type="submit" class="btn btn-danger">Borrar</button>
+                  <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
+                </form>
+              </div>
     </div>
-  </header>
-  <main id="app">
-    <router-view></router-view>
-  </main>
+    <!-- End of Content Wrapper -->
+
 </div>
-
-<template id="product-list">
-  <div>
-    <div class="actions">
-      <router-link class="btn btn-default" v-bind:to="{path: '/add-product'}">
-        <span class="glyphicon glyphicon-plus"></span>
-        Agregar Producto
-      </router-link>
-    </div>
-    <div class="filters row">
-      <div class="form-group col-sm-3">
-        <label for="search-element">Nombre Del Producto</label>
-        <input v-model="searchKey" class="form-control" id="search-element" requred/>
-      </div>
-    </div>
-    <table class="table">
-      <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Descripcion</th>
-        <th>Precio</th>
-        <th>Stock</th>
-        <th class="col-sm-2">Acciones</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="product in filteredProducts">
-        <td>
-          <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.name }}</router-link>
-        </td>
-        <td>{{ product.description }}</td>
-        <td>
-          {{ product.price }}
-          <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
-        </td>
-        <td>
-            {{ product.stock }}
-            <span class="number" aria-hidden="true"></span>
-          </td>
-        <td>
-          <router-link class="btn btn-warning btn-xs" v-bind:to="{name: 'product-edit', params: {product_id: product.id}}">Editar</router-link>
-          <router-link class="btn btn-danger btn-xs" v-bind:to="{name: 'product-delete', params: {product_id: product.id}}">Borrar</router-link>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+<!-- End of Page Wrapper -->
 </template>
-
-<template id="add-product">
-  <div>
-    <h2>Agregar Nuevo Producto</h2>
-    <form v-on:submit="createProduct">
-      <div class="form-group">
-        <label for="add-name">Nombre</label>
-        <input class="form-control" id="add-name" v-model="product.name" required/>
-      </div>
-      <div class="form-group">
-        <label for="add-description">Descripcion</label>
-        <textarea class="form-control" id="add-description" rows="10" v-model="product.description"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="add-price">Precio, <span class="glyphicon glyphicon-euro"></span></label>
-        <input type="number" class="form-control" id="add-price" v-model="product.price"/>
-      </div>
-      <div class="form-group">
-        <label for="add-stock">Stock, <span class=""></span></label>
-        <input type="number" class="form-control" id="add-stock" v-model="product.stock"/>
-      </div>
-      <button type="submit" class="btn btn-primary">Crear</button>
-      <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
-    </form>
-  </div>
-</template>
-
-<template id="product">
-  <div>
-    <h2>{{ product.name }}</h2>
-    <b>Descripcion: </b>
-    <div>{{ product.description }}</div>
-    <b>Precio:</b>
-    <div>{{ product.price }}<span class="glyphicon glyphicon-euro"></span></div>
-    <b>Stock:</b>
-    <div>{{ product.stock }}<span class=""></span></div>
-    <br/>
-    <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
-    <router-link v-bind:to="'/'">Volver a la lista de productos</router-link>
-  </div>
-</template>
-
-<template id="product-edit">
-  <div>
-    <h2>Editar Producto</h2>
-    <form v-on:submit="updateProduct">
-      <div class="form-group">
-        <label for="edit-name">Nombre</label>
-        <input class="form-control" id="edit-name" v-model="product.name" required/>
-      </div>
-      <div class="form-group">
-        <label for="edit-description">Descripcion</label>
-        <textarea class="form-control" id="edit-description" rows="3" v-model="product.description"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="edit-price">Precio, <span class="glyphicon glyphicon-euro"></span></label>
-        <input type="number" class="form-control" id="edit-price" v-model="product.price"/>
-      </div>
-      <div class="form-group">
-        <label for="edit-stock">Stock <span class=""></span></label>
-        <input type="number" class="form-control" id="edit-stock" v-model="product.stock"/>
-      </div>
-      <button type="submit" class="btn btn-primary">Guardar</button>
-      <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
-    </form>
-  </div>
-</template>
-
-<template id="product-delete">
-  <div>
-    <h2>Delete product {{ product.name }}</h2>
-    <form v-on:submit="deleteProduct">
-      <p>Esta accion no se puede realizar.</p>
-      <button type="submit" class="btn btn-danger">Borrar</button>
-      <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
-    </form>
-  </div>
-</template>
-
 </body>
 </html>
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js'></script><script  src="./js/productsad.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js'></script><script  src="js/productosad.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 </html>
