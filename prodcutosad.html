@@ -70,7 +70,7 @@
           <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
         </td>
         <td>
-            {{ product.price }}
+            {{ product.stock }}
             <span class="number" aria-hidden="true"></span>
           </td>
         <td>
@@ -99,6 +99,10 @@
         <label for="add-price">Precio, <span class="glyphicon glyphicon-euro"></span></label>
         <input type="number" class="form-control" id="add-price" v-model="product.price"/>
       </div>
+      <div class="form-group">
+        <label for="add-stock">Stock, <span class=""></span></label>
+        <input type="number" class="form-control" id="add-stock" v-model="product.stock"/>
+      </div>
       <button type="submit" class="btn btn-primary">Crear</button>
       <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>
     </form>
@@ -112,9 +116,11 @@
     <div>{{ product.description }}</div>
     <b>Precio:</b>
     <div>{{ product.price }}<span class="glyphicon glyphicon-euro"></span></div>
+    <b>Stock:</b>
+    <div>{{ product.stock }}<span class=""></span></div>
     <br/>
     <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
-    <router-link v-bind:to="'/'">Back to product list</router-link>
+    <router-link v-bind:to="'/'">Volver a la lista de productos</router-link>
   </div>
 </template>
 
@@ -136,7 +142,7 @@
       </div>
       <div class="form-group">
         <label for="edit-stock">Stock <span class=""></span></label>
-        <input type="number" class="form-stock" id="edit-stock" v-model="product.stock"/>
+        <input type="number" class="form-control" id="edit-stock" v-model="product.stock"/>
       </div>
       <button type="submit" class="btn btn-primary">Guardar</button>
       <router-link class="btn btn-default" v-bind:to="'/'">Cancelar</router-link>

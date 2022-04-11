@@ -1,7 +1,7 @@
 var products = [
-    {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
-    {id: 2, name: 'Ember', description: 'A framework for creating ambitious web applications.', price: 100},
-    {id: 3, name: 'React', description: 'A JavaScript Library for building user interfaces.', price: 100}
+    {id: 1, name: 'Hueso de Perrito', description: 'Huesos 100% Bonitos.', price: 50,stock: 20},
+    {id: 2, name: 'Purina', description: 'La mejor.', price: 30, stock: 15},
+    {id: 3, name: 'Correa', description: 'Correa 100% cuero.', price: 10 ,stock: 10}
   ];
   
   function findProduct (productId) {
@@ -49,7 +49,8 @@ var products = [
           id: product.id,
           name: product.name,
           description: product.description,
-          price: product.price
+          price: product.price,
+          stock: product.stock
         };
         router.push('/');
       }
@@ -72,7 +73,7 @@ var products = [
   var AddProduct = Vue.extend({
     template: '#add-product',
     data: function () {
-      return {product: {name: '', description: '', price: ''}}
+      return {product: {name: '', description: '', price: '', stock: ''}}
     },
     methods: {
       createProduct: function() {
@@ -81,7 +82,8 @@ var products = [
           id: Math.random().toString().split('.')[1],
           name: product.name,
           description: product.description,
-          price: product.price
+          price: product.price,
+          stock: product.stock
         });
         router.push('/');
       }
