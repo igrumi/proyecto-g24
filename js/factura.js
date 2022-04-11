@@ -1,9 +1,9 @@
 var products = [
-    {id: 1, name: 'Hueso de Perrito', description: 'Huesos 100% Bonitos.', price: 50,stock: 20},
-    {id: 2, name: 'Purina', description: 'La mejor.', price: 30, stock: 15},
-    {id: 3, name: 'Correa', description: 'Correa 100% cuero.', price: 10 ,stock: 10}
+    {id: 1, name: '1', description: 'FACTURA DE JUAN'},
+    {id: 2, name: '2', description: 'FACTURA DE PEPE GRILLO.'},
+    {id: 3, name: '3', description: 'FACTURA DE NO SE LLAMA.'}
   ];
-  /* colors */
+  
   function findProduct (productId) {
     return products[findProductKey(productId)];
   };
@@ -47,10 +47,8 @@ var products = [
         var product = this.product;
         products[findProductKey(product.id)] = {
           id: product.id,
-          name: product.name,
+          name: product.id,
           description: product.description,
-          price: product.price,
-          stock: product.stock
         };
         router.push('/');
       }
@@ -73,7 +71,7 @@ var products = [
   var AddProduct = Vue.extend({
     template: '#add-product',
     data: function () {
-      return {product: {name: '', description: '', price: '', stock: ''}}
+      return {product: {name: '', description: ''}}
     },
     methods: {
       createProduct: function() {
@@ -82,8 +80,6 @@ var products = [
           id: Math.random().toString().split('.')[1],
           name: product.name,
           description: product.description,
-          price: product.price,
-          stock: product.stock
         });
         router.push('/');
       }
