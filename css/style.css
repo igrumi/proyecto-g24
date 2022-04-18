@@ -316,6 +316,7 @@ ul.btn li:last-child {
      float: right;
      padding-top: 31px !important;
      padding: 0;
+     background: transparent;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
