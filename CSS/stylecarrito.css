@@ -143,7 +143,7 @@ nav ul li {
   transform: scale(1.1);
 }
 .container .product h2 {
-  text-align: left;
+  text-align: right;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
@@ -157,10 +157,9 @@ nav ul li {
   overflow: hidden;
 }
 .container .product .price {
-  text-align: right;
+  text-align: center;
   font-size: 18px;
   color: #fff;
-  margin-top: 6px;
 }
 .container .product .btn {
   position: absolute;
@@ -168,17 +167,18 @@ nav ul li {
   font-weight: bold;
   float: right;
   padding: 10px;
-  border: 2px solid #00fefe;
+  border: 2px solid rgba(16, 155, 39, 0.637);
   border-radius: 20px;
   bottom: 10px;
   right: 10px;
-  color: #00fefe;
+  color: rgba(16, 155, 39, 0.637);
   cursor: pointer;
   overflow: hidden;
   transition: all 0.2s ease;
+  background-color: rgba(16, 155, 39, 0.637);
 }
 .container .product .btn.ok {
-  background-color: rgba(0, 254, 254, 0.4);
+  background-color: rgba(255, 255, 255, 0.637);
   color: #fff;
 }
 .container .product .btn.ok:after {
@@ -196,7 +196,7 @@ nav ul li {
   content: "";
   transition: all 0.2s ease;
   position: absolute;
-  color: #00fefe;
+  color: rgb(255, 255, 255);
   margin-left: 30px;
   transition: all 0.2s ease;
 }

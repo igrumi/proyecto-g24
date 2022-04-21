@@ -16,6 +16,7 @@ var products = [
     }
   };
   
+  
   var List = Vue.extend({
     template: '#product-list',
     data: function () {
