@@ -1,7 +1,5 @@
 var products = [
-    {id: 1, name: '23', categoria: 'Perros', estado: 'Purina', stock: 'En Bodega', cantidad: '1'},
-    {id: 2, name: '24', categoria: 'Gatos', estado: 'Hueso para perro', stock: 'Vendido', cantidad: '3'},
-    {id: 3, name: '25', categoria: 'Perros', estado: 'Plato para mascota' ,stock: 'Entregado', cantidad: '2'}
+    {id: 1, id: '44', categoria: 'Perros', nombre: 'Hueso para perro', monto: '$10.000', descuentosub: '%0', descuentoofer: '%3', preciofinal: '$9700'},
   ];
   
   function findProduct (productId) {
@@ -47,10 +45,12 @@ var products = [
         var product = this.product;
         products[findProductKey(product.id)] = {
           id: product.id,
-          name: product.name,
           categoria: product.categoria,
-          estado: product.estado,
-          stock: product.stock
+          nombre: product.nombre,
+          monto: product.monto,
+          descuentosub: product.descuentosub,
+          descuentoofer: product.descuentoofer,
+          preciofinal: product.preciofinal
         };
         router.push('/');
       }
@@ -73,18 +73,20 @@ var products = [
   var AddProduct = Vue.extend({
     template: '#add-product',
     data: function () {
-      return {product: {name: '', categoria: '', estado: '', stock: '', cantidad: ''}}
+      return {product: {id: '', categoria: '', nombre: '', monto: '', descuentosub: '', descuentoofer: '', preciofinal: ''}}
     },
     methods: {
       createProduct: function() {
         var product = this.product;
         products.push({
           id: Math.random().toString().split('.')[1],
-          name: product.name,
+          id: product.id,
           categoria: product.categoria,
-          estado: product.estado,
-          stock: product.stock,
-          cantidad: product.cantidad
+          nombre: product.nombre,
+          monto: product.monto,
+          descuentosub: product.descuentosub,
+          descuentoofer: product.descuentoofer,
+          preciofinal: product.preciofinal
         });
         router.push('/');
       }

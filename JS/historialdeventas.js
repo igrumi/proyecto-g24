@@ -1,7 +1,8 @@
 var products = [
-    {id: 1, name: '23', categoria: 'Perros', estado: 'Purina', stock: 'En Bodega', cantidad: '1'},
-    {id: 2, name: '24', categoria: 'Gatos', estado: 'Hueso para perro', stock: 'Vendido', cantidad: '3'},
-    {id: 3, name: '25', categoria: 'Perros', estado: 'Plato para mascota' ,stock: 'Entregado', cantidad: '2'}
+    {id: 1, nrofactura: '23', fecha: '11/1/2022', nombre: 'Juan Valdez', subscrito: 'Si', monto: '$10.000', estado: 'Entregado'},
+    {id: 1, nrofactura: '24', fecha: '04/6/2022', nombre: 'Sebastian Neira', subscrito: 'No', monto: '$23.600', estado: 'Despachado'},
+    {id: 1, nrofactura: '55', fecha: '09/8/2022', nombre: 'Augusto Allende', subscrito: 'Si', monto: '$55.000', estado: 'En Bodega'},
+    {id: 1, nrofactura: '67', fecha: '20/2/2022', nombre: 'Jimmy Neutron', subscrito: 'Si', monto: '$90.000', estado: 'Entregado'},
   ];
   
   function findProduct (productId) {
@@ -46,11 +47,12 @@ var products = [
       updateProduct: function () {
         var product = this.product;
         products[findProductKey(product.id)] = {
-          id: product.id,
-          name: product.name,
-          categoria: product.categoria,
-          estado: product.estado,
-          stock: product.stock
+          nrofactura: product.nrofactura,
+          fecha: product.fecha,
+          nombre: product.nombre,
+          subscrito: product.subscrito,
+          monto: product.monto,
+          estado: product.estado
         };
         router.push('/');
       }
@@ -73,18 +75,19 @@ var products = [
   var AddProduct = Vue.extend({
     template: '#add-product',
     data: function () {
-      return {product: {name: '', categoria: '', estado: '', stock: '', cantidad: ''}}
+      return {product: {nrofactura: '', fecha: '', nombre: '', subscrito: '', monto: '', estado: ''}}
     },
     methods: {
       createProduct: function() {
         var product = this.product;
         products.push({
           id: Math.random().toString().split('.')[1],
-          name: product.name,
-          categoria: product.categoria,
-          estado: product.estado,
-          stock: product.stock,
-          cantidad: product.cantidad
+          nrofactura: product.nrofactura,
+          fecha: product.fecha,
+          nombre: product.nombre,
+          subscrito: product.subscrito,
+          monto: product.monto,
+          estado: product.estado
         });
         router.push('/');
       }

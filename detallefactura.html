@@ -288,48 +288,43 @@
               <main id="app">
                 <router-view></router-view>
               </main>
+              <section>
+                <h2>Estado de Envio</h2>
+                <link href="CSS/monitoreofactura.css" rel="stylesheet" type="text/css">
+                <ul class="progress-indicator">
+                  <li class="completed"> <span class="bubble"></span>Preparando Producto</a></li>
+                  <li class="active"> <span class="bubble"></span>En Ruta</a></li>
+                  <li class=""> <span class="bubble"></span>Entregado</a></li>
+                </ul></section>
             </div>
             
             <template id="product-list">
               <div>
-                <div class="actions">
-                  <router-link class="btn btn-default" v-bind:to="{path: '/add-product'}">
-                    <span class="glyphicon glyphicon-plus"></span>
-                    Agregar Producto
-                  </router-link>
-                </div>
-                <div class="filters row">
-                  <div class="form-group col-sm-3">
-                    <label for="search-element">ID Del Producto</label>
-                    <input v-model="searchKey" class="form-control" id="search-element" requred/>
-                  </div>
-                </div>
                 <table class="table">
                   <thead>
                   <tr>
                     <th>ID</th>
                     <th>Categoria</th>
-                    <th>Nombre</th>
-                    <th>Estado</th>
-                    <th class="col-sm-2">Acciones</th>
+                    <th>Nombre Producto</th>
+                    <th>Monto</th>
+                    <th>Descuento Subscriptor</th>
+                    <th>Descuento Oferta</th>
+                    <th>Precio Final</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr v-for="product in filteredProducts">
                     <td>
-                      <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.name }}</router-link>
-                    </td>
+                      <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.id }}</router-link></td>
                     <td>{{ product.categoria }}</td>
+                    <td>{{ product.nombre }}</td>
+                    <td>{{ product.monto }}</td>
+                    <td>{{ product.descuentosub }}</td>
                     <td>
-                      {{ product.estado }}
-                    </td>
-                    <td>
-                        {{ product.stock }}
-                        <span class="number" aria-hidden="true"></span>
-                      </td>
-                    <td>
-                      <router-link class="btn btn-danger btn-xs" v-bind:to="{name: 'product-delete', params: {product_id: product.id}}">Borrar</router-link>
-                    </td>
+{{ product.descuentoofer }}
+</td>
+                                <td>
+                                    {{ product.preciofinal }}
                   </tr>
                   </tbody>
                 </table>
@@ -365,24 +360,28 @@
                 </form>
               </div>
             </template>
-            
             <template id="product">
               <div>
                 <b>ID: </b>
-                <h2>{{ product.name }}</h2>
+                <h2>{{ product.id }}</h2>
                 <b>Categoria: </b>
                 <div>{{ product.categoria }}</div>
-                <b>Nombre:</b>
-                <div>{{ product.estado }}</div>
-                <b>Estado:</b>
-                <div>{{ product.stock }}<span class=""></span></div>
-                <b>Cantidad:</b>
-                <div>{{ product.cantidad }}<span class=""></span></div>
+                <b>Nombre Producto:</b>
+                <div>{{ product.nombre }}</div>
+                <b>Precio:</b>
+                <div>{{ product.precio }}<span class=""></span></div>
+                <b>% Descuento Subscriptor:</b>
+                <div>{{ product.descuentosub }}<span class=""></span></div>
+                <br/>
+                <b>% Descuento Oferta:</b>
+                <div>{{ product.descuentoofer }}<span class=""></span></div>
+                <br/>
+                <b>Precio Final:</b>
+                <div>{{ product.preciofinal }}<span class=""></span></div>
                 <br/>
                 <router-link v-bind:to="'/'">Volver a la lista de productos</router-link>
               </div>
             </template>
-            
             <template id="product-edit">
               <div>
                 <h2>Editar Producto</h2>
@@ -428,7 +427,7 @@
 </html>
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js'></script><script  src="js/productosad.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js'></script><script  src="JS/detallefactura.js"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

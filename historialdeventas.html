@@ -292,43 +292,36 @@
             
             <template id="product-list">
               <div>
-                <div class="actions">
-                  <router-link class="btn btn-default" v-bind:to="{path: '/add-product'}">
-                    <span class="glyphicon glyphicon-plus"></span>
-                    Agregar Producto
-                  </router-link>
-                </div>
                 <div class="filters row">
                   <div class="form-group col-sm-3">
-                    <label for="search-element">ID Del Producto</label>
+                    <label for="search-element">Numero De Factura</label>
                     <input v-model="searchKey" class="form-control" id="search-element" requred/>
                   </div>
                 </div>
                 <table class="table">
                   <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Categoria</th>
-                    <th>Nombre</th>
-                    <th>Estado</th>
-                    <th class="col-sm-2">Acciones</th>
+                    <th>Nro Factura</th>
+                    <th>Fecha</th>
+                    <th>Nombre Cliente</th>
+                    <th>Subscrito</th>
+                    <th>Monto Total</th>
+                    <th>Estado Actual</th>
+                    <th class="col-sm-2">Opciones</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr v-for="product in filteredProducts">
                     <td>
-                      <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.name }}</router-link>
-                    </td>
-                    <td>{{ product.categoria }}</td>
+                      <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.nrofactura }}</router-link></td>
+                    <td>{{ product.fecha }}</td>
+                    <td>{{ product.nombre }}</td>
+                    <td>{{ product.subscrito }}</td>
+                    <td>{{ product.monto }}</td>
                     <td>
-                      {{ product.estado }}
-                    </td>
-                    <td>
-                        {{ product.stock }}
-                        <span class="number" aria-hidden="true"></span>
-                      </td>
-                    <td>
-                      <router-link class="btn btn-danger btn-xs" v-bind:to="{name: 'product-delete', params: {product_id: product.id}}">Borrar</router-link>
+{{ product.estado }}
+                            <td>
+                                <a style="float:initial " href="detallefactura.html" class="btn btn-primary">Detalles</a>
                     </td>
                   </tr>
                   </tbody>
@@ -365,19 +358,21 @@
                 </form>
               </div>
             </template>
-            
             <template id="product">
               <div>
-                <b>ID: </b>
-                <h2>{{ product.name }}</h2>
-                <b>Categoria: </b>
-                <div>{{ product.categoria }}</div>
+                <b>Numero Factura: </b>
+                <h2>{{ product.nrofactura }}</h2>
+                <b>Fecha: </b>
+                <div>{{ product.fecha }}</div>
                 <b>Nombre:</b>
-                <div>{{ product.estado }}</div>
+                <div>{{ product.nombre }}</div>
+                <b>Subscrito:</b>
+                <div>{{ product.subscrito }}<span class=""></span></div>
+                <b>Monto:</b>
+                <div>{{ product.monto }}<span class=""></span></div>
+                <br/>
                 <b>Estado:</b>
-                <div>{{ product.stock }}<span class=""></span></div>
-                <b>Cantidad:</b>
-                <div>{{ product.cantidad }}<span class=""></span></div>
+                <div>{{ product.estado }}<span class=""></span></div>
                 <br/>
                 <router-link v-bind:to="'/'">Volver a la lista de productos</router-link>
               </div>
@@ -428,7 +423,7 @@
 </html>
 <!-- partial -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js'></script><script  src="js/productosad.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js'></script><script  src="JS/historialdeventas.js"></script>
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
