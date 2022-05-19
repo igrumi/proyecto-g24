@@ -514,7 +514,7 @@ ul.btn li:last-child {
 
 .titlepage {
      text-align: center;
-     padding-bottom: 60px;
+     padding-bottom: 30px;
 }
 
 .titlepage h2 {
@@ -1033,7 +1033,6 @@ ul.social_icon li a:hover {
 
 .about {
      background-color: #fff;
-     padding: 90px 0;
 }
 
 .about .titlepage {
@@ -1046,11 +1045,11 @@ ul.social_icon li a:hover {
 }
 
 .about .titlepage p {
-     padding: 30px 0;
+     padding: 10px 0;
 }
 
 .about_img figure {
-     margin: 0;
+     margin: 100px;
 }
 
 .about_img figure img {
