@@ -321,7 +321,7 @@ ul.btn li:last-child {
 
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 25px;
-     color: #fff;
+     color: rgb(255, 255, 255);
      font-size: 24px;
      line-height: 20px;
      font-weight: 500;
@@ -365,7 +365,7 @@ ul.btn li:last-child {
 .header {
      width: 100%;
      padding: 30px 30px;
-     background: transparent;
+     background: rgba(24, 209, 0, 0.836);
      position: absolute;
      z-index: 999;
 }
