@@ -1250,6 +1250,10 @@ ul.social_icon li a:hover {
      align-self: flex-start;
 }
 
+.prettier{
+     font-family: sans-serif;
+}
+
 @media (max-width: 768px ) {
      .product-info {
           flex-direction: column;
