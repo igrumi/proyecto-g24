@@ -37,9 +37,6 @@ $('#registro').validate({
             required: 'Debe ingresar un descuento para usuarios sustritos ',
         },
 
-  
-
-
     }
 });
 
