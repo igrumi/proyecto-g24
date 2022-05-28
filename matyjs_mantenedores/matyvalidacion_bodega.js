@@ -4,20 +4,17 @@ $('#registro').validate({
             required: true,
         },
 
-        "descripcion": {
+        "cantidad": {
             required: true,
 
         },
 
-        "precio": {
+        "nombres": {
             required: true,
-
         },
 
-        "precio_sus": {
-            required: true,
 
-        },
+
 
     },
     messages: {
@@ -25,17 +22,15 @@ $('#registro').validate({
             required: 'Debe ingresar un ID válido',
         },
 
-        "descripcion": {
-            required: 'Debe ingresar una descripción',
+        "cantidad": {
+            required: 'Debe ingresar la Cantidad de productos que desea agregar',
         },
 
-        "precio": {
-            required: 'Debe ingresar un precio para el producto',
+        "nombres": {
+            required: 'Debe ingresar un nombre valido',
         },
 
-        "precio_sus": {
-            required: 'Debe ingresar un descuento para usuarios sustritos ',
-        },
+
 
     }
 });
