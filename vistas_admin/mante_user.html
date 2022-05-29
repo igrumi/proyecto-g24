@@ -157,29 +157,79 @@
             <tbody>
             <tr v-for="product in filteredProducts">
               <td>
-                <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">{{ product.id }}</router-link>
+                <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">33</router-link>
               </td>
-              <td>{{ product.tipousuario }}</td>
+              <td>Registrado</td>
               <td>
-                {{ product.rut }}
+                20.943.621-5
               </td>
               <td>
-                  {{ product.nombres }}
+                  Sebastian 
                 </td>
                 <td>
-                  {{ product.apellidos }}
+                  Neira
                 </td>
                 <td>
-                  {{ product.direccion }}
+                  San Juan Bautista 434
                 </td>
                 <td>
-                  {{ product.subscripcion }}
+                  Si
                 </td>                    <td>
-                  {{ product.imagen }}
+                  Si
                 </td>
               <td>
               </td>
             </tr>
+            <tr v-for="product in filteredProducts">
+               <td>
+                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">34</router-link>
+               </td>
+               <td>Administrador</td>
+               <td>
+                 19.943.621-5
+               </td>
+               <td>
+                   Miguel 
+                 </td>
+                 <td>
+                   Henriquez
+                 </td>
+                 <td>
+                   Bautista 214
+                 </td>
+                 <td>
+                   No
+                 </td>                    <td>
+                   Si
+                 </td>
+               <td>
+               </td>
+             </tr>
+             <tr v-for="product in filteredProducts">
+               <td>
+                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">35</router-link>
+               </td>
+               <td>Registrado</td>
+               <td>
+                 17.933.561-5
+               </td>
+               <td>
+                   Ignacio 
+                 </td>
+                 <td>
+                   Salazar
+                 </td>
+                 <td>
+                   11 de Septiembre 434
+                 </td>
+                 <td>
+                   Si
+                 </td>                    <td>
+                   Si
+                 </td>
+               <td>
+               </td>
+             </tr>
             </tbody>
           </table>
      </form>
