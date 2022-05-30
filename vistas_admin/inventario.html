@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registro de cliente</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/styleform.css">
+   <link rel="stylesheet" href="../css/responsive.css">
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/stylecarrito.css">
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../CSS/register.css">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
+   
+</head>
+<header>
+   <!-- header inner -->
+   <div class="header">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo">
+                        <a href="../vistas/index.html"><img src="../images/logo.PNG" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+               <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarsExample04">
+                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="../vistas/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="../vistas/catalogo.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="../vistas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="../vistas_admin/matyadministrar_tienda.html">Administrar</a></li>
+                        </li>
+                        
+                           <a class="nav-link" href="..//vistas/login.html">Cambiar a foto admin</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+<div style="padding-top: 250px;" class="container">
+   <div class="row borde-bootstrap-row">
+      <font size="7">Mantenedor de Productos</font>
+   </div>
+   <br>
+   <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+         <div class="row borde-bootstrap-row">
+            <div class="col-sm-6">
+               <div class="form-group">
+                     <label for="rut">ID</label>
+                     <input class="form-control" type="text" name="id" id="id" 
+                        aria-describedby="rut-help" placeholder="Ingresa ID">
+                     <small id="rut-help" class="form-text text-muted">
+                        Escribe una ID
+                     </small>
+               </div>
+               <div class="form-group">
+                <label for="cars">Categoria:</label>
+
+                <select name="cars" id="cars">
+                  <option value="volvo">Perros</option>
+                  <option value="saab">Gatos</option>
+                </select>
+               </div>
+               <div class="form-group">
+                     <label for="apellidos">Nombre</label>
+                     <input class="form-control" type="text" name="nombre" id="nombre" 
+                        placeholder="Escribe aquí el nombre.">
+                 </div>
+                 <div class="form-group">
+                    <label for="direccion">Descripción</label>
+                    <textarea class="form-control" name="descripcion" id="descripcion" cols="60" rows="5" 
+                        aria-describedby="direccion-help"placeholder="Escribe aquí la descripción"></textarea>
+                    <small id="direccion-help" class="form-text text-muted">
+                        Escribe la descripción.
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label for="rut">Precio</label>
+                    <input class="form-control" type="text" name="precio" id="precio" 
+                       aria-describedby="rut-help" placeholder="Ingresa el precio.">
+                    <small id="rut-help" class="form-text text-muted">
+                       Escribe el precio.
+                    </small>
+              </div>
+              <div class="form-group">
+                <label for="rut">Descuento subscriptor</label>
+                <input class="form-control" type="text" name="descs" id="descs" 
+                   aria-describedby="rut-help" placeholder="Ingresa el descuento del subscriptor">
+                <small id="rut-help" class="form-text text-muted">
+                   Escribe el descuento del subscriptor
+                </small>
+          </div>
+          <div class="form-group">
+            <label for="rut">Descuento por oferta</label>
+            <input class="form-control" type="text" name="desco" id="desco" 
+               aria-describedby="rut-help" placeholder="Ingresa el descuento de la oferta">
+            <small id="rut-help" class="form-text text-muted">
+               Escribe el descuento del subscriptor
+            </small>
+      </div>
+             </div>
+             <div class="col-sm-3">
+                 <div class="form-group">
+                     <img src="images/cristian_gomez.jpg" alt="" name="fotoperfil" id="fotoperfil">
+                     <br><br>
+                     <input class="form-control-file" type="file" name="buscarfoto" id="buscarfoto">
+                 </div>
+             </div>
+         </div>
+         <div class="row borde-bootstrap-row">
+             <button type="submit" class="btn btn-primary">Guardar</button>
+             &nbsp;&nbsp;&nbsp;
+             <button type="reset" class="btn btn-secondary">Limpiar</button>
+         </div>
+
+         <table class="table">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Categoria</th>
+              <th>Nombre</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+              <th>% Desc Subscriptor</th>
+              <th>% Desc Oferta</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+            <tr v-for="product in filteredProducts">
+              <td>
+                <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">33</router-link>
+              </td>
+              <td>Perros</td>
+              <td>
+                Saco alimento Yoyan Canin
+              </td>
+              <td>
+                  Saco Royan Canin de 3 Kilos 
+                </td>
+                <td>
+                  $8.000
+                </td>
+                <td>
+                  5%
+                </td>
+                <td>
+                  2%
+                </td>                    
+              <td>
+              </td>
+            </tr>
+            <tr v-for="product in filteredProducts">
+               <td>
+                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">34</router-link>
+               </td>
+               <td>Gato</td>
+               <td>
+                 Saco alimento don cuchito
+               </td>
+               <td>
+                   Saco don CuchitoCanin de 1 Kilo
+                 </td>
+                 <td>
+                   %2.000
+                 </td>
+                 <td>
+                   5%
+                 </td>
+                 <td>
+                   2%
+                 </td>                   
+               <td>
+               </td>
+             </tr>
+             <tr v-for="product in filteredProducts">
+               <td>
+                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">35</router-link>
+               </td>
+               <td>Perros</td>
+               <td>
+                 Saco alimento Royan Canin 
+               </td>
+               <td>
+                Saco Royan Canin de 3 Kilos 
+                 </td>
+                 <td>
+                  $8.000
+                 </td>
+                 <td>
+                   5%
+                 </td>
+                 <td>
+                  2%
+                 </td>                    
+               <td>
+               </td>
+             </tr>
+            </tbody>
+          </table>
+     </form>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="./js_validaciones/validacion-formularios.js"></script>
+</body>
+</html>
