@@ -1201,6 +1201,16 @@ ul.social_icon li a:hover {
      height: 450px;
 }
 
+=======
+
+.act1 .menu ul li:hover a{
+     color: #5dbb4b;
+}
+
+.product__img {
+     width: 450px;
+     height: 450px;
+}
 .product-info {
      box-shadow: 0px 4px 14px -6px #000000;
      padding: 5em 2em;
@@ -1248,6 +1258,10 @@ ul.social_icon li a:hover {
      font-size: 1.5rem;
      border-radius: 4px;
      align-self: flex-start;
+}
+
+.prettier{
+     font-family: sans-serif;
 }
 
 @media (max-width: 768px ) {

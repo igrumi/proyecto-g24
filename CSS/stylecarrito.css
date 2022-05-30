@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300,700);
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  background-color: #00e71f;
+  line-height: 70px;
+}
+nav .mini {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  background: rgb(37, 243, 9);
+  padding: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease 0.2s;
+}
+nav .mini.visible {
+  padding: 40px;
+  opacity: 1;
+  visibility: visible;
+}
+nav .mini .products {
+  font-weight: bold;
+  font-size: 14px;
+}
+nav .mini p {
+  font-size: 11px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+nav .cart {
+    position: relative;
+    float: right;
+    margin-left: 34px;
+    margin-right: -25px;
+    font-size: 28px;
+    line-height: 1;
+    height: 100%;
+    color: white;
+    cursor: pointer;
+}
+nav .cart span {
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+  opacity: 1;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+nav .cart span.updateQuantity:before, nav .cart span.updateQuantity:after {
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  width: 30px;
+  transition: all 0.2s ease, top 0.3s ease 0.4s, bottom 0.3s ease 0.4s;
+}
+nav .cart span.update {
+  transition: color 0.2s ease 0.6s;
+  color: #000;
+}
+nav .cart span.update:before {
+  top: -30px;
+  width: 30px;
+  opacity: 1;
+  transition: all 0.2s ease, top 0.3s ease 0.4s, bottom 0.3s ease 0.4s;
+}
+nav .cart span.update:after {
+  top: 30px;
+  width: 30px;
+  opacity: 1;
+  transition: all 0.2s ease, top 0.3s ease 0.4s, bottom 0.3s ease 0.4s;
+}
+nav .cart span:before, nav .cart span:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: #0b0b0b;
+  left: -10px;
+  right: 40px;
+  top: 2px;
+  bottom: 0;
+  margin: auto;
+}
+nav ul {
+  float: left;
+}
+nav ul li {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 50px;
+  color: #0b0b0b;
+  font-size: 12px;
+}
+
+.container {
+  padding: 20px;
+  padding-top: 100px;
+  text-align: center;
+}
+.container .product {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 240px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.45);
+  margin: 20px;
+  padding: 15px;
+}
+.container .product img {
+  position: relative;
+  top: -15px;
+  left: -15px;
+  transition: all 0.2s ease;
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 70%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 100% 70%);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.container .product img:hover {
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+  transform: scale(1.1);
+}
+.container .product h2 {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.container .product .description {
+  text-align: left;
+  font-size: 11px;
+  color: #fff;
+  max-height: 23px;
+  overflow: hidden;
+}
+.container .product .price {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.container .product .btn {
+  position: absolute;
+  font-size: 11px;
+  font-weight: bold;
+  float: right;
+  padding: 10px;
+  border: 2px solid rgba(16, 155, 39, 0.637);
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+  color: rgba(16, 155, 39, 0.637);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  background-color: rgba(16, 155, 39, 0.637);
+}
+.container .product .btn.ok {
+  background-color: rgba(255, 255, 255, 0.637);
+  color: #fff;
+}
+.container .product .btn.ok:after {
+  content: "";
+  color: #fff;
+}
+.container .product .btn:hover {
+  padding-right: 25px;
+}
+.container .product .btn:hover:after {
+  margin-left: 5px;
+}
+.container .product .btn:after {
+  font-family: "simple-line-icons";
+  content: "";
+  transition: all 0.2s ease;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  margin-left: 30px;
+  transition: all 0.2s ease;
+}
