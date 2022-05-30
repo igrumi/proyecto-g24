@@ -83,26 +83,20 @@
          </div>
       </div>
    </header>
-   <br><br>
+   <br><br><br><br>
    <div class="login-box">
       <img class="avatar" src="../images/logo.PNG" alt="logo maninon">
       <h1>Iniciar Sesión </h1><br>
-      <form style="display: flex; flex-direction:column; align-items:center">
-            <!--  USER NAME  -->
-            <label for="user" id="user">Nombre de Usuario</label>
-            <input type="text" placeholder="Ingresa aqui tu nombre de usuario">
-            <!--  Password  -->
-            <label for="pass" id="pass">Contraseña</label>
-            <input type="password" placeholder="Ingresa aqui tu contraseña">
-            <a style="padding: 0.3em; text-align:center; width: 100%; text-decoration:none; color:#fff; font-weight:bold; font-size:1rem;" type="submit" class="btn btn-primary" control-id="ControlID-10">Validacion login</a><br>
-            <a style="padding: 0.3em; text-align:center; width: 100%; text-decoration:none; color:#fff; font-weight:bold; font-size:1rem;" class="btn-primary"  href="../vistas_user/indexuser.html">Entrar</a><br>
-            <a style="padding: 0.3em; text-align:center; width: 100%; text-decoration:none; color:#fff; font-weight:bold; font-size:1rem;" class="btn-primary"  href="../vistas_admin/index_admin.html">Entrar como admin</a><br>
-            <a href="">¿Olvidaste tu contraseña?</a>
-            <a href="../vistas/register.html">Crea tu cuenta aqui </a>
+      <form action="/login.php" id="formulario">
+         <p>Usuario: <input type="text" name="user" id="user"></p>
+         <p>Clave: <input type="text" name="pass" id="pass"></p>
+         <input type="submit" value="Entrar"><br>
+         <a style="padding: 0.3em; text-align:center; width: 100%; text-decoration:none; color:#fff; font-weight:bold; font-size:1rem;" class="btn btn-primary"  href="../vistas_user/indexuser.html">Entrar</a><br><br>
+         <a style="padding: 0.3em; text-align:center; width: 100%; text-decoration:none; color:#fff; font-weight:bold; font-size:1rem;" class="btn btn-primary"  href="../vistas_admin/index_admin.html">Entrar como admin</a><br><br><br>
+         <a style="margin-left: 0;" href="#">¿Olvidaste tu contraseña?</a>
+         <a style="margin-right: 0;" href="../vistas/register.html">Crea tu cuenta aqui </a>
       </form>
-
    </div>
    <script src="../js_validaciones/js-login.js"></script>
-   <script src="../js_validaciones/validacion-formularios.js"></script>
 </body>
 </html>
