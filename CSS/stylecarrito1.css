@@ -93,7 +93,7 @@ nav .cart span:before, nav .cart span:after {
   position: absolute;
   width: 0px;
   height: 2px;
-  background-color: #0b0b0b;
+  background-color: #ffffff;
   left: -10px;
   right: 40px;
   top: 2px;
@@ -107,7 +107,7 @@ nav ul li {
   font-weight: bold;
   display: inline-block;
   margin-left: 50px;
-  color: #0b0b0b;
+  color: #ffffff;
   font-size: 12px;
 }
 

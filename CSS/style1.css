@@ -313,7 +313,7 @@ ul.btn li:last-child {
 /*-- navigation--*/
 
 .navigation.navbar {
-     float: right;
+     
      padding-top: 31px !important;
      padding: 0;
      background: transparent;
@@ -633,8 +633,8 @@ ul.btn li:last-child {
 }
 
 .our_products .product_box h3:hover {
-    background: #48ca95;
-    transition: ease-in all 0.5s;
+          background: #48ca95;
+          transition: ease-in all 0.5s;
 }
 
 .margin_bottom1 {
@@ -656,12 +656,6 @@ ul.btn li:last-child {
      background: #48ca95;
      color: #000 !important;
 }
-
-
-/** end products section **/
-
-
-/** laptop  section **/
 
 .laptop {
      font-family: 'Dosis', sans-serif;
@@ -1200,4 +1194,68 @@ ul.social_icon li a:hover {
 
 .act1 .menu ul li:hover a{
      color: #5dbb4b;
+}
+
+.product__img {
+     width: 450px;
+     height: 450px;
+}
+
+.product-info {
+     box-shadow: 0px 4px 14px -6px #000000;
+     padding: 5em 2em;
+     margin: 2em auto;
+     width: 95%;
+     text-align: center;
+     display: flex;
+     /* flex-direction: column; */
+     justify-content: center;
+     align-items: center;
+}
+
+.product__title {
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 2rem;
+}
+
+.product__stock,
+.product__descr,
+.product__price{
+     font-size: 1.5rem;
+}
+
+.product__detail--bold {
+     font-weight: 700;
+}
+
+.product__price {
+     color: #5dbb4b;
+     font-weight: 700;
+     /* font-size: 2rem; */
+}
+
+.product-details {
+     gap: 2em;
+     text-align: left;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+}
+
+.product__btn {
+     padding: .8em;
+     font-size: 1.5rem;
+     border-radius: 4px;
+     align-self: flex-start;
+}
+
+.prettier{
+     font-family: sans-serif;
+}
+
+@media (max-width: 768px ) {
+     .product-info {
+          flex-direction: column;
+     }
 }
