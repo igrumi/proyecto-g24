@@ -11,9 +11,9 @@
    <link rel="stylesheet" href="../css/style.css">
    <link rel="stylesheet" href="../css/stylecarrito.css">
    <link rel="stylesheet" href="../css/bootstrap.min.css">
-   <link rel="stylesheet" href="../CSS/register.css">
+   <link rel="stylesheet" href="../css/register.css">
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
-   <link rel="stylesheet" href="../CSS/carro.css">
+   <link rel="stylesheet" href="../css/carro.css">
    
 </head>
 <header>
@@ -47,11 +47,24 @@
                            <a class="nav-link" href="../vistas/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="../vistas_admin/matyadministrar_tienda.html">Administrar</a></li>
+                           <a class="nav-link" href="../vistas_admin/administrar_tienda.html">Administrar</a></li>
                         </li>
                         
-                           <a class="nav-link" href="..//vistas/login.html">Cambiar a foto admin</a>
-                        </li>
+                        <div class="act1">
+                           <div class="perfil" onclick="menuToggle();">
+                              <img src="../images/cristian_gomez.jpg">
+                           </div>
+                           <div class="menu">
+                              <h3>Admin<br><span>No suscrito</span></h3>
+                              <ul>
+                                 <li> <img src="../images/user.png"><a href="../vistas_user/indexuser.html">Mi perfil</a></li>
+                                 <li> <img src="../images/edit.png"><a href="#">Editar perfil</a></li>
+                                 <li> <img src="../images/envelope.png"><a href="#">Pedidos</a></li>
+                                 <li> <img src="../images/settings.png"><a href="#">Configuraciones</a></li>
+                                 <li> <img src="../images/log-out.png"><a href="../vistas/index.html">Cerrar sesión</a></li>
+                              </ul>
+                           </div>
+                        </div>
                      </ul>
                   </div>
                </nav>

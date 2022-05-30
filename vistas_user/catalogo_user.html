@@ -26,7 +26,8 @@
       <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'><link rel="stylesheet" href="../CSS/stylecarrito.css">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
+      <link rel="stylesheet" href="../css/stylecarrito.css">
 
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -49,7 +50,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="../vistas/index.html"><img src="../images/logo.PNG" alt="">
+                              <a href="../vistas_user_user/indexuser.html"><img src="../images/logo.PNG" alt="">
                            </div>
                         </div>
                      </div>
@@ -61,25 +62,34 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="../vistas_user/indexuser.html">Inicio</a>
+                              </li>
                               <li class="nav-item active">
-                                 <a class="nav-link" href="../vistas/index.html">Inicio</a>
+                                 <a class="nav-link" href="../vistas_user/catalogo_user.html">Productos</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="../vistas/catalogo.html">Productos</a>
+                                 <a class="nav-link" href="../vistas_user/nosotros_user.html">Nosotros</a></li>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="../vistas/register.html">Registro</a></li>
+                                 <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="../vistas/nosotros.html">Nosotros</a></li>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="../"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              </li>
-                                 <a class='cart icon-basket' class="nav-link" href="../carro.html"></a>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="../vistas/login.html">Iniciar sesión</a>
-                              </li>
+                                 <a class='cart icon-basket' class="nav-link" href="../vistas_user/carro.html"></a>
+                                 <div class="act1">
+                                    <div class="perfil" onclick="menuToggle();">
+                                       <img src="../images/pic.jpg">
+                                    </div>
+                                    <div class="menu">
+                                       <h3>Tamara Grumi<br><span>No suscrito</span></h3>
+                                       <ul>
+                                          <li> <img src="../images/user.png"><a href="#">Mi perfil</a></li>
+                                          <li> <img src="../images/edit.png"><a href="#">Editar perfil</a></li>
+                                          <li> <img src="../images/envelope.png"><a href="#">Pedidos</a></li>
+                                          <li> <img src="../images/settings.png"><a href="#">Configuraciones</a></li>
+                                          <li> <img src="../images/log-out.png"><a href="../vistas_user/index.html">Cerrar sesión</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
                            </ul>
                         </div>
                      </nav>
@@ -106,7 +116,7 @@
    <div class='container'>
       <div style="padding-bottom: 50px;" class='product'>
          <p style="color:black; font-weight:bold">Purina Doko | $18990</p>
-      <a href="../vistas/producto_nolog.html"><img src='../images/p1.webp'></a>
+      <a href="../vistas_user/producto.html"><img src='../images/p1.webp'></a>
       <div style="color: white;" class='btn'>Agregar al carro</div>
       </div>
       <div style="padding-bottom: 50px;" class='product'>
@@ -168,28 +178,14 @@
       <!-- partial -->
          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./js/script.js"></script>
    </section>
-      <!-- carro -->
-      <!-- end Carro -->
-      </section>
       <!-- end banner -->
-      <!-- three_box -->
-      <!-- three_box -->
-      <!-- products -->
-      <!-- end products -->
-      <!-- laptop  section -->
-      <!-- laptop  section -->
-      <!-- end laptop  section -->
-      <!-- customer -->
-      <!-- end customer -->
-      <!--  contact -->
-      <!-- end contact -->
       <!--  footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                     <img class="logo1" src="images/logo.PNG" alt="#"/>
+                     <img class="logo1" src="../images/logo.PNG" alt="#"/>
                      <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -225,13 +221,19 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="JS/scriptcarrito.js"></script>
+      <script src="../jquery.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/jquery-3.0.0.min.js"></script>
+      <script src="../js/scriptcarrito.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../js/custom.js"></script>
+      <script>
+         function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+         }
+      </script>
    </body>
 </html>

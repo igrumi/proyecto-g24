@@ -32,51 +32,59 @@
     <header>
         <!-- header inner -->
         <div class="header">
-            <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+           <div class="container-fluid">
+              <div class="row">
+                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                     <div class="full">
-                        <div class="center-desk">
-                        <div class="logo">
-                            <img src="../images/logo.PNG" alt="">
-                        </div>
-                        </div>
+                       <div class="center-desk">
+                          <div class="logo">
+                             <a href="../vistas_user/indexuser.html"><img src="../images/logo.PNG" alt="">
+                          </div>
+                       </div>
                     </div>
-                </div>
-                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                 </div>
+                 <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                            <ul class="navbar-nav mr-auto">
-                               <li class="nav-item ">
-                                  <a class="nav-link" href="../vistas/index.html">Inicio</a>
-                               </li>
-                               <li class="nav-item active">
-                                  <a class="nav-link" href="../vistas/catalogo.html">Productos</a>
-                               </li>
-                               <li class="nav-item">
-                                  <a class="nav-link" href="../vistas/register.html">Registro</a></li>
-                               </li>
-                               <li class="nav-item">
-                                  <a class="nav-link" href="../vistas/nosotros.html">Nosotros</a></li>
-                               </li>
-                               <li class="nav-item">
-                                  <a class="nav-link" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
-                               </li>
-                                  <a class='cart icon-basket' class="nav-link" href="../vistas/login.html"></a>
-                               <li class="nav-item">
-                                  <a class="nav-link" href="../vistas/login.html">Iniciar sesión</a>
-                               </li>
-                            </ul>
-                         </div>
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarsExample04">
+                          <ul class="navbar-nav mr-auto">
+                             <li class="nav-item active">
+                                <a class="nav-link" href="../vistas_admin/index_admin.html">Inicio</a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="../vistas_admin/catalogo.html">Productos</a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="../vistas_admin/nosotros.html">Nosotros</a></li>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="../vistas_admin/administrar_tienda.html">Administrar</a></li>
+                             </li>
+                                <div class="act1">
+                                   <div class="perfil" onclick="menuToggle();">
+                                      <img src="../images/cristian_gomez.jpg">
+                                   </div>
+                                   <div class="menu">
+                                      <h3>Admin<br><span>No suscrito</span></h3>
+                                      <ul>
+                                         <li> <img src="../images/user.png"><a href="../vistas_user/indexuser.html">Mi perfil</a></li>
+                                         <li> <img src="../images/edit.png"><a href="#">Editar perfil</a></li>
+                                         <li> <img src="../images/envelope.png"><a href="#">Pedidos</a></li>
+                                         <li> <img src="../images/settings.png"><a href="#">Configuraciones</a></li>
+                                         <li> <img src="../images/log-out.png"><a href="../vistas/index.html">Cerrar sesión</a></li>
+                                      </ul>
+                                   </div>
+                                </div>
+                          </ul>
+                       </div>
                     </nav>
-                </div>
-            </div>
-            </div>
+                 </div>
+              </div>
+           </div>
         </div>
-    </header>
+     </header>
     <!-- end header inner -->
     <!-- end header -->
     <!-- about section -->
@@ -87,7 +95,6 @@
             <p class="product__price">Precio: 18990</p>
             <p class="product__stock"><span class="product__detail--bold">Stock:</span> Disponible</p>
             <p class="product__descr">Si alimentación de calidad es lo que quieres, comprar Purina Doko debes.</p>
-            <a href="../vistas/login.html"><button class="btn-primary product__btn">Agregar al carro</button></a>
         </div>
     </div>
     <!-- end about section -->

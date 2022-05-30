@@ -11,18 +11,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/star.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/star.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
-    <link rel="stylesheet" href="css/stylecarrito.css">
+    <link rel="stylesheet" href="../css/stylecarrito.css">
     
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="../images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
@@ -38,7 +38,7 @@
                     <div class="full">
                         <div class="center-desk">
                         <div class="logo">
-                            <img src="images/logo.PNG" alt="">
+                            <img src="../images/logo.PNG" alt="">
                         </div>
                         </div>
                     </div>
@@ -50,25 +50,34 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                             <ul class="navbar-nav mr-auto">
+                               <li class="nav-item ">
+                                  <a class="nav-link" href="../vistas_user/indexuser.html">Inicio</a>
+                               </li>
                                <li class="nav-item active">
-                                  <a class="nav-link" href="index.html">Inicio</a>
+                                  <a class="nav-link" href="../vistas_user/catalogo_user.html">Productos</a>
                                </li>
                                <li class="nav-item">
-                                  <a class="nav-link" href="catalogo.html">Productos</a>
-                               </li>
-                               <li class="nav-item">
-                                  <a class="nav-link" href="register.html">Registro</a></li>
-                               </li>
-                               <li class="nav-item">
-                                  <a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                                  <a class="nav-link" href="../vistas_user/nosotros_user.html">Nosotros</a></li>
                                </li>
                                <li class="nav-item">
                                   <a class="nav-link" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
                                </li>
-                                  <a class='cart icon-basket' class="nav-link" href="carro.html"></a>
-                               <li class="nav-item">
-                                  <a class="nav-link" href="login.html">Iniciar sesión</a>
-                               </li>
+                                  <a class='cart icon-basket' class="nav-link" href="../vistas_user/carro.html"></a>
+                                  <div class="act1">
+                                    <div class="perfil" onclick="menuToggle();">
+                                       <img src="../images/pic.jpg">
+                                    </div>
+                                    <div class="menu">
+                                       <h3>Tamara Grumi<br><span>No suscrito</span></h3>
+                                       <ul>
+                                          <li> <img src="../images/user.png"><a href="../vistas_user/indexuser.html">Mi perfil</a></li>
+                                          <li> <img src="../images/edit.png"><a href="#">Editar perfil</a></li>
+                                          <li> <img src="../images/envelope.png"><a href="#">Pedidos</a></li>
+                                          <li> <img src="../images/settings.png"><a href="#">Configuraciones</a></li>
+                                          <li> <img src="../images/log-out.png"><a href="../vistas/index.html">Cerrar sesión</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
                             </ul>
                          </div>
                     </nav>
@@ -81,7 +90,7 @@
     <!-- end header -->
     <!-- about section -->
     <div class="product-info">
-        <img src="images/p1.webp" alt="product-img" class="product__img">
+        <img src="../images/p1.webp" alt="product-img" class="product__img">
         <div class="product-details">
             <h2 class="product__title">Saco de comida para perros Purina Doko 21kg</h2>
             <p class="product__price">Precio: 18990</p>
@@ -97,7 +106,7 @@
             <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <img class="logo1" src="images/logo.PNG" alt="#"/>
+                    <img class="logo1" src="../images/logo.PNG" alt="#"/>
                     <ul class="social_icon">
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -133,13 +142,19 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="JS/scriptcarrito.js"></script>
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/popper.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/jquery-3.0.0.min.js"></script>
+      <script src="../js/scriptcarrito.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="../js/custom.js"></script>
+      <script>
+        function menuToggle(){
+           const toggleMenu = document.querySelector('.menu');
+           toggleMenu.classList.toggle('active')
+        }
+     </script>
    </body>
 </html>
