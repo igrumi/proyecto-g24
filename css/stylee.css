@@ -10,7 +10,7 @@
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
+ ----------------------------------------*********/
 
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
@@ -143,6 +143,7 @@ a {
 a,
 .btn {
      text-decoration: none !important;
+     float: right;
      outline: none !important;
      -webkit-transition: all .3s ease-in-out;
      -moz-transition: all .3s ease-in-out;
@@ -316,12 +317,11 @@ ul.btn li:last-child {
      float: right;
      padding-top: 31px !important;
      padding: 0;
-     background: transparent;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 25px;
-     color: rgb(255, 255, 255);
+     color: #fff;
      font-size: 24px;
      line-height: 20px;
      font-weight: 500;
@@ -365,7 +365,7 @@ ul.btn li:last-child {
 .header {
      width: 100%;
      padding: 30px 30px;
-     background: rgba(24, 209, 0, 0.836);
+     background: transparent;
      position: absolute;
      z-index: 999;
 }
@@ -514,7 +514,7 @@ ul.btn li:last-child {
 
 .titlepage {
      text-align: center;
-     padding-bottom: 30px;
+     padding-bottom: 60px;
 }
 
 .titlepage h2 {
@@ -600,9 +600,9 @@ ul.btn li:last-child {
 /** products section **/
 
 .products {
-     margin-top: 90px;
-     background: #f7f7f7;
-     padding: 90px 0 90px 0;
+     margin-top: 5px;
+     background: #6d6d6dda;
+     padding: 0px 0 0px 0;
 }
 
 .our_products {
@@ -633,8 +633,8 @@ ul.btn li:last-child {
 }
 
 .our_products .product_box h3:hover {
-          background: #48ca95;
-          transition: ease-in all 0.5s;
+    background: #48ca95;
+    transition: ease-in all 0.5s;
 }
 
 .margin_bottom1 {
@@ -657,10 +657,16 @@ ul.btn li:last-child {
      color: #000 !important;
 }
 
+
+/** end products section **/
+
+
+/** laptop  section **/
+
 .laptop {
      font-family: 'Dosis', sans-serif;
      padding: 130px 0;
-     background-color: #4aa652;
+     background-color: #4f4aa6;
 }
 
 .laptop .titlepage {
@@ -763,7 +769,7 @@ ul.btn li:last-child {
 }
 
 .customer_Carousel .carousel-indicators li.active {
-     background: #5dbb4b;
+     background: #4f4aa6;
 }
 
 #myCarousel .carousel-control-next-icon,
@@ -774,17 +780,14 @@ ul.btn li:last-child {
 
 /** end customer section **/
 
+/** carro section **/
+
+ /** end carro section **/
 
 /** contact section **/
 
 .contact {
      background: url(../images/contact_g.jpg);
-     background-repeat: no-repeat;
-     background-size: 100% 100%;
-     padding: 90px 0;
-}
-.contact2 {
-     background: url(../images/contact2.jpg);
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 90px 0;
@@ -881,11 +884,6 @@ ul.btn li:last-child {
 .logo1 {
      float: left;
      margin-top: -30px;
-}
-
-.prof_img{
-     width: 35px;
-     height: 35px;
 }
 
 ul.social_icon {
@@ -1011,7 +1009,7 @@ ul.social_icon li a:hover {
 
 .inner_posituong .header {
      position: inherit;
-     background: #5dbb4b;
+     background: #4843a3;
 }
 
 .computer_page .laptop {
@@ -1027,6 +1025,7 @@ ul.social_icon li a:hover {
 
 .about {
      background-color: #fff;
+     padding: 90px 0;
 }
 
 .about .titlepage {
@@ -1039,11 +1038,11 @@ ul.social_icon li a:hover {
 }
 
 .about .titlepage p {
-     padding: 10px 0;
+     padding: 30px 0;
 }
 
 .about_img figure {
-     margin: 100px;
+     margin: 0;
 }
 
 .about_img figure img {
@@ -1084,188 +1083,6 @@ ul.social_icon li a:hover {
      width: 100%;
 }
 
-.claseperf{
-     margin: 0;
-     padding: 0;
-     font-family: 'Poppins', sans-serif;
-} 
 
-.claseperf2{
-     background: #ffccbc;
-}
+/** end laptop **/
 
-.act1{
-     position: fixed;
-     top: 20px;
-     right: 30px;
-}
-
-.act1 .perfil{
-     position: relative;
-     width: 60px;
-     height: 60px;
-     border-radius: 50%;
-     overflow: hidden;
-     cursor: pointer;
-}
-
-.act1 .perfil img{
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-}
-
-.act1 .menu{
-     position: absolute;
-     top: 120px;
-     right: -10px;
-     padding: 10px 20px;
-     background: #fff;
-     width: 200px;
-     box-sizing: 0  5px  25px rgba(0,0,0,0.1);
-     border-radius: 15px;
-     transition: 0.5px;
-     visibility: hidden;
-     opacity: 0;
-}
-
-.act1 .menu.active{
-     top: 80px;
-     visibility: visible;
-     opacity: 1;
-}
-
-.act1 .menu::before{
-     content: '';
-     position: absolute;
-     top: -5px;
-     right: 28px;
-     width: 20px;
-     height: 20px;
-     background: #fff;
-     transform: rotate(45deg);
-}
-
-.act1 .menu h3{
-     width: 100%;
-     text-align: center;
-     font-size: 18px;
-     padding: 20px 0;
-     font-weight: 500;
-     color: #555;
-     line-height: 1.2em;
-}
-
-.act1 .menu h3 span{
-     font-size: 14px;
-     color: #cecece;
-     font-weight: 400;
-
-}
-
-.act1 .menu ul li{
-     list-style: none;
-     padding: 10px 0;
-     border-top: 1px solid rgba(0,0,0,0.05);
-     display: flex;
-     align-items: center;
-}
-
-.act1 .menu ul li img{
-     max-width: 20px;
-     margin-right: 10px;
-     opacity: 0.5;
-     transition: 0.5s;
-}
-
-.act1 .menu ul li:hover img{
-     opacity: 1;
-}
-
-.act1 .menu ul li a{
-     display: inline-block;
-     text-decoration: none;
-     color: #555;
-     font-weight: 0.5s;
-}
-
-.act1 .menu ul li:hover a{
-     color: #5dbb4b;
-}
-
-.product__img {
-     width: 450px;
-     height: 450px;
-}
-
-=======
-
-.act1 .menu ul li:hover a{
-     color: #5dbb4b;
-}
-
-.product__img {
-     width: 450px;
-     height: 450px;
-}
-.product-info {
-     box-shadow: 0px 4px 14px -6px #000000;
-     padding: 5em 2em;
-     margin: 2em auto;
-     width: 95%;
-     text-align: center;
-     display: flex;
-     /* flex-direction: column; */
-     justify-content: center;
-     align-items: center;
-}
-
-.product__title {
-     font-weight: 700;
-     text-transform: uppercase;
-     font-size: 2rem;
-}
-
-.product__stock,
-.product__descr,
-.product__price{
-     font-size: 1.5rem;
-}
-
-.product__detail--bold {
-     font-weight: 700;
-}
-
-.product__price {
-     color: #5dbb4b;
-     font-weight: 700;
-     /* font-size: 2rem; */
-}
-
-.product-details {
-     gap: 2em;
-     text-align: left;
-     display: flex;
-     flex-direction: column;
-     align-items: left;
-}
-
-.product__btn {
-     padding: .8em;
-     font-size: 1.5rem;
-     border-radius: 4px;
-     align-self: flex-start;
-}
-
-.prettier{
-     font-family: sans-serif;
-}
-
-@media (max-width: 768px ) {
-     .product-info {
-          flex-direction: column;
-     }
-}
