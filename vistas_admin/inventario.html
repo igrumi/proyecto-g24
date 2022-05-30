@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="../css/bootstrap.min.css">
    <link rel="stylesheet" href="../CSS/register.css">
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
+   <link rel="stylesheet" href="../CSS/carro.css">
    
 </head>
 <header>
@@ -135,91 +136,64 @@
              <button type="reset" class="btn btn-secondary">Limpiar</button>
          </div>
 
-         <table class="table">
-            <thead>
-            <tr>
-              <th>ID</th>
-              <th>Categoria</th>
-              <th>Nombre</th>
-              <th>Descripcion</th>
-              <th>Precio</th>
-              <th>% Desc Subscriptor</th>
-              <th>% Desc Oferta</th>
-            </tr>
-            </thead>
-            
-            <tbody>
-            <tr v-for="product in filteredProducts">
-              <td>
-                <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">33</router-link>
-              </td>
-              <td>Perros</td>
-              <td>
-                Saco alimento Yoyan Canin
-              </td>
-              <td>
-                  Saco Royan Canin de 3 Kilos 
-                </td>
-                <td>
-                  $8.000
-                </td>
-                <td>
-                  5%
-                </td>
-                <td>
-                  2%
-                </td>                    
-              <td>
-              </td>
-            </tr>
-            <tr v-for="product in filteredProducts">
-               <td>
-                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">34</router-link>
-               </td>
-               <td>Gato</td>
-               <td>
-                 Saco alimento don cuchito
-               </td>
-               <td>
-                   Saco don CuchitoCanin de 1 Kilo
-                 </td>
-                 <td>
-                   %2.000
-                 </td>
-                 <td>
-                   5%
-                 </td>
-                 <td>
-                   2%
-                 </td>                   
-               <td>
-               </td>
-             </tr>
-             <tr v-for="product in filteredProducts">
-               <td>
-                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">35</router-link>
-               </td>
-               <td>Perros</td>
-               <td>
-                 Saco alimento Royan Canin 
-               </td>
-               <td>
-                Saco Royan Canin de 3 Kilos 
-                 </td>
-                 <td>
-                  $8.000
-                 </td>
-                 <td>
-                   5%
-                 </td>
-                 <td>
-                  2%
-                 </td>                    
-               <td>
-               </td>
-             </tr>
-            </tbody>
-          </table>
+
+         <section class="details">
+            <div class="details__container">
+        
+                <div class="detail__products">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Categoria</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                                <th>Precio</th>
+                                <th>% Desc Subscriptor</th>
+                                <th>% Desc Oferta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr--g">
+                                <th>33</th>
+                                <td>Perros</td>
+                                <td>Saco alimento Yoyan Canin</td>
+                                <td>Saco Royan Canin de 3 Kilos </td>
+                                <td>$8.000</td>
+                                <td>5%</td>
+                                <td>2%</td>                    
+                              </tr>
+
+                            <tr class="tr--g">
+                              <th>34</th>
+                              <td>Gato</td>
+                              <td>Saco alimento don cuchito</td>
+                              <td>Saco don CuchitoCanin de 1 Kilo</td>
+                              <td>%2.000</td>
+                              <td>5%</td>
+                              <td>2%</td>                   
+                            </tr>
+
+                          <tr class="tr--g">
+                           <th>35</th>
+                           <td>Perros</td>
+                           <td>Saco alimento Royan Canin </td>
+                           <td>Saco Royan Canin de 3 Kilos </td>
+                           <td>$8.000</td>
+                           <td>5%</td>
+                           <td>2%</td>                    
+                        </tr>
+
+                        </tbody>
+        
+                    </table>
+                    
+        
+                </div>
+                
+            </div>
+        </section>
+         
      </form>
  </div>
 
