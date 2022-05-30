@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="../css/bootstrap.min.css">
    <link rel="stylesheet" href="../CSS/register.css">
    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.2.4/css/simple-line-icons.min.css'>
+   <link rel="stylesheet" href="../CSS/carro.css">
    
 </head>
 <header>
@@ -140,99 +141,70 @@
              <button type="reset" class="btn btn-secondary">Limpiar</button>
          </div>
 
-         <table class="table">
-            <thead>
-            <tr>
-              <th>ID</th>
-              <th>Tipo Usuario</th>
-              <th>Rut</th>
-              <th>Nombres</th>
-              <th>Apellidos</th>
-              <th>Direccion</th>
-              <th>Subscripcion</th>
-              <th>Imagen</th>
-            </tr>
-            </thead>
-            
-            <tbody>
-            <tr v-for="product in filteredProducts">
-              <td>
-                <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">33</router-link>
-              </td>
-              <td>Registrado</td>
-              <td>
-                20.943.621-5
-              </td>
-              <td>
-                  Sebastian 
-                </td>
-                <td>
-                  Neira
-                </td>
-                <td>
-                  San Juan Bautista 434
-                </td>
-                <td>
-                  Si
-                </td>                    <td>
-                  Si
-                </td>
-              <td>
-              </td>
-            </tr>
-            <tr v-for="product in filteredProducts">
-               <td>
-                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">34</router-link>
-               </td>
-               <td>Administrador</td>
-               <td>
-                 19.943.621-5
-               </td>
-               <td>
-                   Miguel 
-                 </td>
-                 <td>
-                   Henriquez
-                 </td>
-                 <td>
-                   Bautista 214
-                 </td>
-                 <td>
-                   No
-                 </td>                    <td>
-                   Si
-                 </td>
-               <td>
-               </td>
-             </tr>
-             <tr v-for="product in filteredProducts">
-               <td>
-                 <router-link v-bind:to="{name: 'product', params: {product_id: product.id}}">35</router-link>
-               </td>
-               <td>Registrado</td>
-               <td>
-                 17.933.561-5
-               </td>
-               <td>
-                   Ignacio 
-                 </td>
-                 <td>
-                   Salazar
-                 </td>
-                 <td>
-                   11 de Septiembre 434
-                 </td>
-                 <td>
-                   Si
-                 </td>                    <td>
-                   Si
-                 </td>
-               <td>
-               </td>
-             </tr>
-            </tbody>
-          </table>
-     </form>
+         <section class="details">
+            <div class="details__container">
+        
+                <div class="detail__products">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>Tipo Usuario</th>
+                              <th>Rut</th>
+                              <th>Nombres</th>
+                              <th>Apellidos</th>
+                              <th>Direccion</th>
+                              <th>Subscripcion</th>
+                              <th>Imagen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr--g">
+                                <th>35</th>
+                                <td>Registrado</td>
+                                <td>17.933.561-5</td>
+                                <td>Ignacio </td>
+                                <td>Salazar</td>
+                                <td>11 de Septiembre 434</td>
+                                <td>Si</td>                    
+                                <td>Si</td>
+                            </tr>
+
+                            <tr class="tr--g">
+                              <th>36</th>
+                              <td>Registrado</td>
+                              <td>20.943.621-5</td>
+                              <td>Sebastian </td>
+                              <td>Neira</td>
+                              <td>San Juan Bautista 434</td>
+                              <td>Si</td>                    
+                              <td>Si</td>
+                            </tr>
+
+                          <tr class="tr--g">
+                           <th>38</th>
+                           <td>Administrador</td>
+                           <td>19.943.621-5</td>
+                           <td>Miguel </td>
+                           <td>Henriquez</td>
+                           <td>Bautista 214</td>
+                           <td>No</td>                    
+                           <td>Si</td>
+                           </td>
+                         </tr>
+
+                        </tbody>
+        
+                    </table>
+                    
+        
+                </div>
+                
+            </div>
+        </section>
+
+
+
  </div>
 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
