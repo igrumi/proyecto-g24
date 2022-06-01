@@ -1,0 +1,105 @@
+:root {
+    --color-c1: #F2F2F2;
+    --color-c2: #FAFAFA;
+    --color-c3: #FFFFFF;
+    --color-c4: #24252A;
+    --color-c4-hover: #2E2F36;
+    --color-c5: #00BFA6;
+    --color-c5-hover: #039E89;
+    --color-c6: #FF3696;
+    --color-c7: #F53D3D;
+    --color-c8: #53545C;
+    --color-c9: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:var(--color-c1);
+}
+
+.clothes {
+    margin-top: 6rem;
+    color: var(--color-c4);
+    width: 95%;
+    margin: 6rem auto auto auto;
+    padding: 150px;
+}
+
+.clothesbox{
+    width: 450px;
+    height: 420px;
+    background: rgb(107, 99, 99);
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+
+.clothes__title {
+    padding-bottom: 2rem;
+    font-size:xx-large;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#clothes__container {
+    gap: .7em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.img__src {
+    width: 300px;
+    height: 200px;
+}
+
+.description__company {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.product {
+    cursor: pointer;
+    padding: 3.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--color-c3);
+    border-radius: 4px;
+    transform: scale(.98);
+    transition: .3s;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+.product:hover {
+    transform: scale(1);
+    transition: .3s;
+}
+
+.description__price {
+    color: var(--color-c5);
+    font-weight: 500;
+}
+
+.dog {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}

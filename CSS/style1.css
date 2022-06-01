@@ -447,6 +447,8 @@ ul.btn li:last-child {
 
 .text_img {
      margin-right: -130px;
+     height: 600px;
+     width: 500px;
 }
 
 .text_img figure {
@@ -1199,6 +1201,11 @@ ul.social_icon li a:hover {
 .product__img {
      width: 450px;
      height: 450px;
+}
+
+.product__img_redeem {
+     width: 150px;
+     height: 225px;
 }
 
 .product-info {
